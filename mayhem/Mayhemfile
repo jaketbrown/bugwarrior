@@ -1,0 +1,8 @@
+project: bugwarrior
+target: bugwarrior-fuzz
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/bugwarrior_fuzz.py
+    libfuzzer: true
